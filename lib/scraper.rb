@@ -45,6 +45,7 @@ attr_accessor :name, :location, :profile_url
     students[:profile_quote] = profile.css(".profile-quote").text if profile.css(".profile-quote")
     students[:bio] = profile.css(".description-holder p").text
     students
+  end
 
 end
 
