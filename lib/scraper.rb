@@ -26,7 +26,7 @@ attr_accessor :name, :location, :profile_url
     
 
   def self.scrape_profile_page(profile_url)
-        students = {}
+    students = {}
     
     profile = Nokogiri::HTML(open(profile_url))
     social = profile.css(".social-icon-container a")
